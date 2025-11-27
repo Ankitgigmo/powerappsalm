@@ -8,17 +8,23 @@ on:
 jobs:
   deploy-uat:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
+    steps:
+      # STEP 1: Checkout repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # STEP 2: Install Power Platform CLI
       - name: Install Power Platform CLI
         uses: microsoft/powerplatform-actions/actions-install@v1
 
+      # STEP 3: Pack solution from src folder
       - name: Pack solution
         run: |
           mkdir out
           pac solution pack --folder ./src/MySolution --zipfile ./out/MySolution_Managed.zip
 
+      # STEP 4: Authenticate to UAT
       - name: Authenticate with SP (UAT)
         env:
           TENANT: ${{ secrets.AZURE_TENANT_ID }}
@@ -28,7 +34,7 @@ jobs:
         run: |
           pac auth create --applicationId $CLIENT_ID --clientSecret $CLIENT_SECRET --tenant $TENANT --environment $ENV_URL --name sp-uat
 
+      # STEP 5: Import solution to UAT
       - name: Import solution to UAT
         run: |
           pac solution import --path ./out/MySolution_Managed.zip --overwrite true
-
