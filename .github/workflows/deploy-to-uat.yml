@@ -1,1 +1,34 @@
+name: Deploy Solution to UAT
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-uat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Power Platform CLI
+        run: pac install latest
+
+      - name: Pack solution
+        run: |
+          mkdir out
+          pac solution pack --folder ./src/MySolution --zipfile ./out/MySolution_Managed.zip
+
+      - name: Authenticate with SP (UAT)
+        env:
+          TENANT: ${{ secrets.AZURE_TENANT_ID }}
+          CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          ENV_URL: ${{ secrets.PP_UAT_URL }}
+        run: |
+          pac auth create --applicationId $CLIENT_ID --clientSecret $CLIENT_SECRET --tenant $TENANT --environment $ENV_URL --name sp-uat
+
+      - name: Import solution to UAT
+        run: |
+          pac solution import --path ./out/MySolution_Managed.zip --overwrite true
 
