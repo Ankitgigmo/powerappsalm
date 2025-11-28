@@ -10,22 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # STEP 1 — Checkout repo
+      # STEP 1 — Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # STEP 2 — Install PAC CLI
+      # STEP 2 — Install Power Platform CLI (correct inputs)
       - name: Install Power Platform CLI
         uses: microsoft/powerplatform-actions/actions-install@v1
         with:
-          pac-version: latest
+          pac-version-override: latest
+          add-tools-to-path: true
 
-      # STEP 3 — Pack solution from Git source
+      # STEP 3 — Pack solution from src/MySolution
       - name: Pack solution
         run: |
           mkdir out
-          pac solution pack --folder ./src/MySolution --zipfile ./out/MySolution_Managed.zip
-          # ⚠ Replace ./src/MySolution with your actual folder name
+          pac solution pack --folder ./src/MySolution --zipfile ./out/AP637_Managed.zip
 
       # STEP 4 — Authenticate to UAT
       - name: Authenticate with SP (UAT)
@@ -37,7 +37,7 @@ jobs:
         run: |
           pac auth create --applicationId $CLIENT_ID --clientSecret $CLIENT_SECRET --tenant $TENANT --environment $ENV_URL --name sp-uat
 
-      # STEP 5 — Import into UAT
+      # STEP 5 — Import solution AP637 to UAT
       - name: Import solution to UAT
         run: |
-          pac solution import --path ./out/MySolution_Managed.zip --overwrite true
+          pac solution import --path ./out/AP637_Managed.zip --overwrite true
