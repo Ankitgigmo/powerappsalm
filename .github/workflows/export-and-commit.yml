@@ -8,15 +8,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # STEP 1 — Checkout repo
+      # STEP 1 — Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # STEP 2 — Install PAC CLI
+      # STEP 2 — Install Power Platform CLI
       - name: Install Power Platform CLI
         uses: microsoft/powerplatform-actions/actions-install@v1
         with:
-          pac-version: latest
+          pac-version-override: latest
+          add-tools-to-path: true
 
       # STEP 3 — Authenticate to DEV
       - name: Authenticate with SP (DEV)
@@ -28,25 +29,23 @@ jobs:
         run: |
           pac auth create --applicationId $CLIENT_ID --clientSecret $CLIENT_SECRET --tenant $TENANT --environment $ENV_URL --name sp-dev
 
-      # STEP 4 — Export solution
+      # STEP 4 — Export solution (YOUR solution name = AP637)
       - name: Export solution from DEV
         run: |
           mkdir out
-          pac solution export --path ./out/MySolution.zip --name MySolution --managed false
-          # ⚠ Replace MySolution above with your real Solution Unique Name
+          pac solution export --path ./out/AP637.zip --name AP637 --managed false
 
-      # STEP 5 — Unpack
+      # STEP 5 — Unpack solution (folder = MySolution)
       - name: Unpack solution
         run: |
           mkdir -p src
-          pac solution unpack --zipfile ./out/MySolution.zip --folder ./src/MySolution
-          # ⚠ Replace ./src/MySolution with the actual folder name you want
+          pac solution unpack --zipfile ./out/AP637.zip --folder ./src/MySolution
 
-      # STEP 6 — Commit to GitHub
+      # STEP 6 — Commit changes back to GitHub
       - name: Commit changes
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
           git add .
-          git commit -m "Updated solution from DEV" || echo "No changes to commit"
+          git commit -m "Updated solution AP637 from DEV" || echo "No changes to commit"
           git push
