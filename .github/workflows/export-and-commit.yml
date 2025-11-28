@@ -16,7 +16,7 @@ jobs:
       - name: Install Power Platform CLI
         uses: microsoft/powerplatform-actions/actions-install@v1
         with:
-          pac-version-override: latest
+          pac-version-override: 1.30.4
           add-tools-to-path: true
 
       # STEP 3 — Authenticate to DEV
