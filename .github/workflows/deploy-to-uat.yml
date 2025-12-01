@@ -35,7 +35,7 @@ jobs:
           CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
           ENV_URL: ${{ secrets.PP_UAT_URL }}
         run: |
-          pac auth create --applicationId $CLIENT_ID --clientSecret $CLIENT_SECRET --tenant $TENANT --environment $ENV_URL --name sp-uat
+          pac auth create --applicationId $CLIENT_ID --clientSecret $CLIENT_SECRET --tenant $TENANT --environment $PP_UAT_URL --name sp-uat
 
       # 5) Import the solution into UAT
       - name: Import solution to UAT
