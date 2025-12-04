@@ -17,7 +17,7 @@ jobs:
       - name: Install Power Platform CLI
         uses: microsoft/powerplatform-actions/actions-install@v1
         with:
-          pac-version-override: 1.51.0
+          pac-version-override: 1.43.6
           add-tools-to-path: true
 
       - name: Pack AMLGit Solution
