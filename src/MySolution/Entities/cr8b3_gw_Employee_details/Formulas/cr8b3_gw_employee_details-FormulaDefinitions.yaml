@@ -1,5 +1,0 @@
-cr8b3_gw_cal_date_of_joining: =cr8b3_gw_date_of_joining
-cr8b3_gw_month: =Month(cr8b3_gw_date)
-cr8b3_gw_tenure: =DateDiff(cr8b3_gw_cal_date_of_joining,UTCToday(),TimeUnit.Months)/12
-cr8b3_gw_total_yearof_experience: =Sum(cr8b3_gw_tenure,cr8b3_gw_prior_experience)
-cr8b3_gw_year: =Year(cr8b3_gw_date)
