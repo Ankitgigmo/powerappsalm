@@ -30,11 +30,11 @@ jobs:
           TENANT: ${{ secrets.AZURE_TENANT_ID }}
           CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
-          ENV_URL: ${{ secrets.PP_UAT_URL }}
+          ENV_URL: ${{ secrets.PP_DEV_URL }}
         run: |
           pac auth create --applicationId $CLIENT_ID --clientSecret $CLIENT_SECRET --tenant $TENANT --environment $ENV_URL --name sp-uat
 
-      - name: Import Solution into UAT
+      - name: Import Solution into Dev
         run: |
           pac solution import --path ./out/AMLGit_Managed.zip --force-overwrite
 
