@@ -36,4 +36,5 @@ jobs:
 
       - name: Import Solution into UAT
         run: |
-          pac solution import --path ./out/AMLGit_Managed.zip --overwrite true
+          pac solution import --path ./out/AMLGit_Managed.zip --force-overwrite
+
