@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{10baf3c8-b348-4df1-b0f5-949ff6296285}</savedqueryid>
+    <layoutxml>
+      <grid name="crf46_realignment_logses" jump="crf46_serial_number" select="1" icon="1" preview="1">
+        <row name="crf46_realignment_logs" id="crf46_realignment_logsid">
+          <cell name="crf46_serial_number" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crf46_realignment_logs">
+          <attribute name="crf46_realignment_logsid" />
+          <attribute name="crf46_serial_number" />
+          <attribute name="createdon" />
+          <order attribute="crf46_serial_number" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="realignment_logs Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

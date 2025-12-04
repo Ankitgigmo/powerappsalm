@@ -1,0 +1,4 @@
+cr8b3_gw_month: =Month(cr8b3_gw_date)
+cr8b3_gw_year: =Year(cr8b3_gw_date)
+crf46_gw_event_month: =Month(cr8b3_gw_event_date)
+crf46_gw_event_year: =Year(cr8b3_gw_event_date)

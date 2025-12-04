@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{112ddf3a-cb43-4408-b5f4-bb3ad9b1865a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crf46_newcolumn" select="1" icon="1" preview="1">
+        <row name="result" id="crf46_log_historyflowid">
+          <cell name="crf46_newcolumn" width="226" />
+          <cell name="crf46_gw_date" width="100" />
+          <cell name="crf46_gw_month" width="100" />
+          <cell name="crf46_flowstatus" width="104" />
+          <cell name="crf46_message" width="100" />
+          <cell name="crf46_gw_year" width="100" />
+          <cell name="crf46_rundatetime" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="crf46_log_historyflow">
+          <attribute name="crf46_log_historyflowid" />
+          <attribute name="crf46_newcolumn" />
+          <attribute name="createdon" />
+          <attribute name="crf46_flowstatus" />
+          <order attribute="crf46_newcolumn" descending="false" />
+          <filter type="and">
+            <condition attribute="crf46_gw_year" operator="eq" value="2025" />
+            <condition attribute="crf46_gw_month" operator="eq" value="11" />
+          </filter>
+          <attribute name="crf46_gw_date" />
+          <attribute name="crf46_message" />
+          <attribute name="crf46_gw_year" />
+          <attribute name="crf46_rundatetime" />
+          <attribute name="crf46_gw_month" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Log_HistoryFlows" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

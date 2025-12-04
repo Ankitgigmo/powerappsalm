@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c035b8c8-d20c-4969-8079-a2c876d4da7c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crf46_primary_id" select="1" icon="1" preview="1">
+        <row name="result" id="crf46_gwia_gigworker_document_managementid">
+          <cell name="crf46_primary_id" width="300" />
+          <cell name="crf46_gw_person_name" width="150" />
+          <cell name="crf46_gw_live_id_verification" width="150" />
+          <cell name="crf46_gw_live_id_verification_last_modified_date" width="150" />
+          <cell name="crf46_gw_bgv_green_report_exist" width="150" />
+          <cell name="crf46_gw_bgv_green_report_last_modified_date" width="150" />
+          <cell name="crf46_gw_address_proof_exist" width="150" />
+          <cell name="crf46_gw_address_proof_last_modified_date" width="150" />
+          <cell name="crf46_gw_agreement_exist" width="150" />
+          <cell name="crf46_gw_agreement_last_modified_date" width="150" />
+          <cell name="crf46_gw_id_proof_exist" width="150" />
+          <cell name="crf46_gw_id_proof_last_modified_date" width="150" />
+          <cell name="crf46_gw_live_id_exist" width="150" />
+          <cell name="crf46_gw_live_id_last_modified_date" width="150" />
+          <cell name="crf46_gw_trc_exist" width="150" />
+          <cell name="crf46_gw_trc_last_modified_date" width="150" />
+          <cell name="crf46_gw_last_modified_by" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crf46_gwia_gigworker_document_management">
+          <attribute name="crf46_gwia_gigworker_document_managementid" />
+          <attribute name="crf46_primary_id" />
+          <attribute name="createdon" />
+          <order attribute="crf46_primary_id" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="crf46_gw_person_name" />
+          <attribute name="crf46_gw_live_id_verification" />
+          <attribute name="crf46_gw_live_id_verification_last_modified_date" />
+          <attribute name="crf46_gw_bgv_green_report_exist" />
+          <attribute name="crf46_gw_bgv_green_report_last_modified_date" />
+          <attribute name="crf46_gw_address_proof_exist" />
+          <attribute name="crf46_gw_address_proof_last_modified_date" />
+          <attribute name="crf46_gw_agreement_exist" />
+          <attribute name="crf46_gw_agreement_last_modified_date" />
+          <attribute name="crf46_gw_id_proof_exist" />
+          <attribute name="crf46_gw_id_proof_last_modified_date" />
+          <attribute name="crf46_gw_live_id_exist" />
+          <attribute name="crf46_gw_live_id_last_modified_date" />
+          <attribute name="crf46_gw_trc_exist" />
+          <attribute name="crf46_gw_trc_last_modified_date" />
+          <attribute name="crf46_gw_last_modified_by" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active gwia_gigworker_document_managements" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

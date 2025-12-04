@@ -1,0 +1,2 @@
+crf46_gig_salary_month: =Month(crf46_gig_salary_date)
+crf46_gig_salary_year: =Year(crf46_gig_salary_date)

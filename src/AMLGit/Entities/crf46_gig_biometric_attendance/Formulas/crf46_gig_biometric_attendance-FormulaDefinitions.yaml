@@ -1,0 +1,4 @@
+crf46_gig_event_month: =Month(crf46_gig_event_date)
+crf46_gig_event_year: =Year(crf46_gig_event_date)
+crf46_gig_month: =Month(crf46_gig_date)
+crf46_gig_year: =Year(crf46_gig_date)

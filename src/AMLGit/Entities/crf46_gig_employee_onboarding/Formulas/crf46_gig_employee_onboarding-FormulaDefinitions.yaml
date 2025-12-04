@@ -1,0 +1,2 @@
+crf46_gig_month: =Month(crf46_gig_create_date)
+crf46_gig_year: =Year(crf46_gig_create_date)

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c0d24a22-dd27-4d6a-a805-c581f8bc5cff}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crf46_gig_plus_minus_id" select="1" icon="1" preview="1">
+        <row name="result" id="crf46_gig_emp_plusminusid">
+          <cell name="crf46_gig_plus_minus_id" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crf46_gig_emp_plusminus">
+          <attribute name="crf46_gig_emp_plusminusid" />
+          <attribute name="crf46_gig_plus_minus_id" />
+          <attribute name="createdon" />
+          <order attribute="crf46_gig_plus_minus_id" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="gig_emp_plus-minus Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,11 @@
+crf46_gig_month: =Month(crf46_gig_date)
+crf46_gig_type: |
+    =If(
+        EndsWith(crf46_gig_form_for, "gigmos.pro"), 
+        "GIG-Worker", 
+        EndsWith(crf46_gig_form_for, "gigmos.com"), 
+        "Employee", 
+        EndsWith(crf46_gig_form_for, "onmicrosoft.com"), 
+        "AutoDesk"
+        )
+crf46_gig_year: =Year(crf46_gig_date)

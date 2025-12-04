@@ -1,0 +1,3 @@
+cr8b3_auto_month: =Month(cr8b3_auto_date)
+cr8b3_auto_tenure: =If(IsBlank(cr8b3_auto_last_working_day),DateDiff(cr8b3_auto_date_of_joining,UTCToday(),TimeUnit.Months)/12,DateDiff(cr8b3_auto_date_of_joining,cr8b3_auto_last_working_day,TimeUnit.Months)/12)
+cr8b3_auto_year: =Year(cr8b3_auto_date)

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>88591fa6-fe93-417e-84c4-52ff2b91d53a</connectorid>
+  <description></description>
+  <displayname>Sal_test</displayname>
+  <iconbrandcolor>#007ee5</iconbrandcolor>
+  <name>gig_sal-5ftest</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/gig_sal-5ftest_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/gig_sal-5ftest_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/gig_sal-5ftest_policytemplateinstances.json</policytemplateinstances>
+  <iconblob>/Connector/gig_sal-5ftest_iconblob.Png</iconblob>
+</Connector>

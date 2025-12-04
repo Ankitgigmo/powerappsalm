@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9d346cb0-7cd5-48a1-97f8-08b4280d1ac5}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="crf46_auto_daily_dashboard_id" select="1" icon="1" preview="1">
+        <row name="result" id="crf46_auto_daily_dashboardid">
+          <cell name="crf46_auto_daily_dashboard_id" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="crf46_auto_daily_dashboard">
+          <attribute name="crf46_auto_daily_dashboardid" />
+          <attribute name="crf46_auto_daily_dashboard_id" />
+          <attribute name="createdon" />
+          <order attribute="crf46_auto_daily_dashboard_id" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active auto_daily_dashboards" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

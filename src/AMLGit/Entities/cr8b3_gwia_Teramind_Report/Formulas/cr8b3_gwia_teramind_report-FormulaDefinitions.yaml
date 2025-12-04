@@ -1,0 +1,2 @@
+cr8b3_gw_month: =Month(cr8b3_gw_tera_date)
+cr8b3_gw_year: =Year(cr8b3_gw_tera_date)

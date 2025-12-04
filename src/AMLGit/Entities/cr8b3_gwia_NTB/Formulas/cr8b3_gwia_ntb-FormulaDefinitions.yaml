@@ -1,0 +1,5 @@
+cr8b3_gw_created_on: =createdon
+cr8b3_gw_month: =Month(cr8b3_gw_date)
+cr8b3_gw_year: =Year(cr8b3_gw_date)
+crf46_gw_report_month: =Month(cr8b3_gw_report_date)
+crf46_gw_report_year: =Year(cr8b3_gw_report_date)

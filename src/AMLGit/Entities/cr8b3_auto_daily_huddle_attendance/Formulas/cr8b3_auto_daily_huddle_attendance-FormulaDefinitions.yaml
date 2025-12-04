@@ -1,0 +1,2 @@
+cr8b3_auto_month: =Month(cr8b3_auto_date)
+cr8b3_auto_year: =Year(cr8b3_auto_date)

@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d1a02785-e79d-43c3-998a-01a42a89e03b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{c9240974-dd64-4597-befa-f96e13abbb18}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{00f1cc25-2b82-44dd-b19d-65ded71383e2}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{db42337b-a009-442a-bdc1-c19432abb2b3}">
+                        <labels>
+                          <label description="gw_gig_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr8b3_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{050b4ead-662c-409e-885f-1b3adf27b911}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7d225c9d-d7d6-4658-aa56-31f511eefbbd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_batch" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_batch" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_batch" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7d4e9919-6173-423d-85ad-b8e9b3809b0c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_bgv/deduction_of_bgv" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_bgvdeduction_of_bgv" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="crf46_gw_bgvdeduction_of_bgv" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6b21f979-5f5a-49eb-91d3-ff9379943423}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_bgv_amount" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_bgv_amount" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crf46_gw_bgv_amount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7679f5b5-b2b3-4ed7-aca9-1ea0a54427e6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_country_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_country_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr8b3_gw_country_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{63e9c9e0-7972-4bc9-9485-113d1619dd25}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_crm_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_remarks" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_remarks" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3a0b5c3c-9115-4b64-8426-0c104a971687}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05367457-52eb-4d09-b6b5-97560d5fb951}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_date" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_date" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_date" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{49f997f9-1bdc-4784-9ca3-fa339d8eab5f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_date_of_birth" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_date_of_birth" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_date_of_birth" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4336404a-2f43-4c3a-8cbb-62adfc995280}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_datetime" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_datetime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_datetime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{878c9fd1-7280-4caa-ba52-035e718bd4ac}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_deactivated_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_deactivated_id" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr8b3_gw_deactivated_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b87514c-6269-4174-a2c8-5a62d9658f3b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_deduction_in_payout_month" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_deduction_in_payout_month" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="crf46_gw_deduction_in_payout_month" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{836efe3d-f4b7-4741-9ec0-396187ca54b0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_department_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_department_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr8b3_gw_department_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4e0f64d1-383e-45a5-9302-9d7d09b22952}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_employee" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_employee" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr8b3_gw_employee" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cae5b6d6-300e-42ed-9f94-3558de65b8b1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_excluded_from_dashboard" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_excluded_from_dashboard" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_excluded_from_dashboard" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f7e10701-b10a-440e-b66a-119bba98a7ab}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_experience_in_O365" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_experience_in_o365" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr8b3_gw_experience_in_o365" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{35e3d4d1-b0fe-4d0f-a03f-d40849dba5a1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_first_name" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_first_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_first_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{37f04887-d76c-4afa-aaea-2db61f1725f0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_gender" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_gender" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_gender" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{036a1e01-9f81-4485-99ba-bd7aebc5e1c3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_gigmos_pro_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_gigmos_pro_id" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_gigmos_pro_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ef8002d5-2fd7-4a37-9767-9ae77089ec8c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_gigworker_holiday_type_id" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_gigworker_holiday_type_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="crf46_gw_gigworker_holiday_type_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2bc52b91-3167-4d9e-b313-76b139823e9b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_handover_date" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_handover_date" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_handover_date" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{be22f1d5-589e-4701-945c-78e2734d85d4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_hardware" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_hardware" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_hardware" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{33708fa5-56bb-4221-8b22-baa821a744a0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_highest_degree" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_highest_degree" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_highest_degree" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc39f156-ac1f-4800-b6a8-117413425500}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_hours_per_day" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_hours_per_day" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr8b3_gw_hours_per_day" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{858a4f5f-1431-47b8-aeb6-1d396af055ee}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_internet_speed_status" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_internet_speed_status" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="crf46_gw_internet_speed_status" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41f706d7-70ba-4912-8db1-f647cb75003b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_is_Verified" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_is_verified" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr8b3_gw_is_verified" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fa324c23-7bdd-4f85-835d-c0ea0d5d1e01}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_it_remarks" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_it_remarks" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crf46_gw_it_remarks" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{18ecf482-3990-45b1-868e-7b5fb5900d0f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_language_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_language_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr8b3_gw_language_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{47c2dcdd-905b-4d6b-b8f4-5a2626a11cd0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_currency" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_currency" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr8b3_gw_currency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c12b1e7b-478c-408f-b438-765482cdb29c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_last_name" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_last_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_last_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{94a3a745-48a3-41c6-b16e-f8776e44801c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_lob" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_lob" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_lob" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{844c3e7d-b2df-4205-8cb8-88800c4c101d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_LWD" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_lwd" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_lwd" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f0055f1b-a23f-43a5-bae6-3123733c01ed}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_memory_status" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_memory_status" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="crf46_gw_memory_status" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d3eb912-0802-48ca-86a7-b2899cb14954}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_mid" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_mid" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr8b3_gw_mid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{acf24c1c-3e64-4018-b836-988a18034401}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_middle_name" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_middle_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_middle_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a71fd121-a858-4dd4-8a2d-83131a486405}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_month" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_month" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr8b3_gw_month" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80216f29-34f6-492e-9ddb-84eaea18ec77}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_national_Id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_national_id" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_national_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1261ba49-b263-4f7e-a6bb-d3808faf1e26}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_national_Id" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_national_id" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crf46_gw_national_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8f38dfc3-57b6-4c55-8931-482ff3567265}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_notes" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_remarks" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crf46_gw_remarks" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b10715fb-9558-46ba-a95e-712782ff2b1b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_onboarding_crm_id" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_onboarding_crm_id" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crf46_gw_onboarding_crm_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e19bf13f-15a4-437d-bad4-3212435aaebd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_passport_number" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_passport_number" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_passport_number" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7adeb27f-7f38-477f-91d2-c3e888e58b04}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_passport_number" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_passport_number" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crf46_gw_passport_number" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f6200197-c8da-453f-a7c8-dae9c1021c40}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_payment_plan_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_payment_plan_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr8b3_gw_payment_plan_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f1e7121e-c54f-43b3-841c-ebeedcba6a19}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_payment_type" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_payment_type" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr8b3_gw_payment_type" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8b085010-82ab-4092-9aae-2ed05777529b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_per_ticket_rate" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_per_ticket_rate" classid="{0D2C745A-E5A8-4C8F-BA63-C6D3BB604660}" datafieldname="cr8b3_gw_per_ticket_rate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d31fc9a-6612-41e8-ba66-0e10003c1479}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_personal_mail_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_personal_mail_id" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr8b3_gw_personal_mail_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e612475e-4250-4e70-bfa1-9e0ee5a30ec0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_personal_mail_id_old" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_personal_mail_id_old" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="crf46_gw_personal_mail_id_old" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2faa707b-c566-4e52-99a1-30b7686cdfb5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_phone_number" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_phone_number" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_phone_number" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4acbe05-9eb4-4b0a-a5f1-b36fbcff829e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_previous_v_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_previous_v_id" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr8b3_gw_previous_v_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4446547-ea13-48ce-a93e-3a2a74d43f66}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_reason_for_exit" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_reason_for_text" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_reason_for_text" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{da93b492-7c13-414e-a634-673a9388903d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_recruiter_name" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_recruiter_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_recruiter_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d03dc18-3cd9-43ed-b09d-15dbac18c8a6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_requirment_met" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_requirment_met" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="crf46_gw_requirment_met" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2c066d15-6ca1-49f2-a151-87d56a2d4fe4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_shift_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_shift_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr8b3_gw_shift_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9546b68a-2dd2-4149-8f25-587838f7ba55}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_status" languagecode="1033" />
+                        </labels>
+                        <control id="gig_gw_status" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="gig_gw_status" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{633325b5-1bce-492d-94c8-ccab158239fd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_status_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_status_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr8b3_gw_status_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e95c35b9-4b1d-4431-a89f-b958f61083b0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_team_id" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_team_id" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr8b3_gw_team_id" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{96fa4d5f-8f79-4047-a1f8-5961e3271f26}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_trained_on_technology" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_trained_on_technology" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_trained_on_technology" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c075f4ae-926a-4b7b-84ef-613394d23e0f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_trc" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_trc" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="crf46_gw_trc" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{28013621-289b-459d-a951-b6b83087e793}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_unfavorable_exit" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_unfavorable_exit" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="crf46_gw_unfavorable_exit" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2d8ddb29-4c86-4d99-9d6f-4bcc5a8aa210}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_updatedon" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_updatedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_updatedon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1af58052-9eda-4e15-ba0b-c01dcc7a77a3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_verified_payment_plan" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_verified_payment_plan" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="crf46_gw_verified_payment_plan" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{93d04bad-ca9c-4d92-bf99-7cf0c64d2f9f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_whatsapp_number" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_whatsapp_number" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_whatsapp_number" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fcde5c9e-299b-4650-a8a0-cfb986def74f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_year" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_year" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="cr8b3_gw_year" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ece8b2af-097f-4683-8142-888b8c16b4ea}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_year_of_graduation" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_year_of_graduation" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cr8b3_gw_year_of_graduation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cc244139-da09-43f9-8c76-e58ea3d6e9a4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_yubi_key_configured" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_yubi_key_configured" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr8b3_gw_yubi_key_configured" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d2aa5aac-4f62-4861-a7ee-00446ead4658}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_yubi_key_not_recieved" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_yubi_key_not_recieved" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr8b3_gw_yubi_key_not_recieved" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7bfeb670-211c-4de6-8688-00a79d106f9f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_yubi_key_order" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_yubi_key_order" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr8b3_gw_yubi_key_order" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{31df5698-c619-49f6-9161-280beaaf05b6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_yubi_key_order_date" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_yubi_key_order_date" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_yubi_key_order_date" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3a29b3a6-0430-4f49-8253-471e3d695e19}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_yubi_key_received" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_yubi_key_received" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr8b3_gw_yubi_key_received" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c326ec0f-e934-4c2a-b653-98c7ea812539}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_Yubi_ticket_number" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_yubi_key_number" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_yubi_key_number" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ceee7514-0a1c-48b7-9989-577a3dee695e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_yubikey_offboarding" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_yubikey_offboarding" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr8b3_gw_yubikey_offboarding" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{938fec79-db52-4969-8d61-4ab92cdefc79}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="gw_Yubikey_serial_number" languagecode="1033" />
+                        </labels>
+                        <control id="cr8b3_gw_yubikey_serial_number" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_yubikey_serial_number" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9fd6c86f-d7e6-482d-9883-58b7da9f266b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{121a88a2-4dbf-4ae4-a933-6fe21f10297c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified By (Delegate)" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedonbehalfby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedonbehalfby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{270ab549-fcb5-4b66-b099-7ba43d94e8a4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{91609131-9eca-4751-b843-e780d63e93de}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{0446b48b-0de9-4ede-b53d-3080ceba9d21}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{94787101-7a32-4225-a467-a7a499d699fc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{00832109-bec5-4a47-9ebe-c4458e9887cc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5f7afd0c-fa45-4a15-b315-b3578e1efbac}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="gw_agreement_date" languagecode="1033" />
+              </labels>
+              <control id="header_cr8b3_gw_agreement_date" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="cr8b3_gw_agreement_date" disabled="false" />
+            </cell>
+            <cell id="{3359320f-440d-4f1f-8cab-4166a4aeb6b7}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="gw_agreement_recieved" languagecode="1033" />
+              </labels>
+              <control id="header_cr8b3_gw_agreement_recieved" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr8b3_gw_agreement_recieved" disabled="false" />
+            </cell>
+            <cell id="{7d0ac0e1-15af-405d-89c3-8a5f92404f86}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="gw_agreement_update_date" languagecode="1033" />
+              </labels>
+              <control id="header_cr8b3_gw_agreement_update_date" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr8b3_gw_agreement_update_date" disabled="false" />
+            </cell>
+            <cell id="{c2527eb9-164c-4c40-8098-13990ce2b042}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="gw_attachment" languagecode="1033" />
+              </labels>
+              <control id="header_cr8b3_gw_attachment" classid="{0A7FF475-B016-4687-9CE5-042BFDBD6519}" datafieldname="cr8b3_gw_attachment" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{b7a39be7-56f0-40aa-8c31-79ee7fb5dd3c}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2ecf6a82-058a-4702-8a66-9a542979f64f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2ae3bddb-ef9b-4c90-b525-49214e062d97}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f0d06626-a84f-43d7-aaaa-505074611a1a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

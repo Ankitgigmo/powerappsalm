@@ -1,0 +1,274 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_sendgrid": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "gig_SendGrid7Nov2024"
+        },
+        "api": {
+          "name": "shared_sendgrid"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "gig_sharedcommondataserviceforapps_472ea"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "084d2a0f-2fa8-4210-bbb7-9164887ca122"
+          },
+          "type": "Request",
+          "kind": "PowerApp",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Mail_Value": {
+                  "type": "string",
+                  "description": "Enter initial value",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Sub_Value": {
+                  "type": "string",
+                  "description": "Enter initial value",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Body_Value": {
+                  "type": "string",
+                  "description": "Enter initial value",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Cc_Value": {
+                  "type": "string",
+                  "description": "Enter initial value",
+                  "x-ms-powerflows-param-ispartial": false
+                }
+              },
+              "required": [
+                "Mail_Value",
+                "Sub_Value",
+                "Body_Value",
+                "Cc_Value"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Mail": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "f89586aa-fb67-4a9b-95c9-b319fa9ffd6a"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Mail",
+                "type": "string",
+                "value": "@{triggerBody()['Mail_Value']}"
+              }
+            ]
+          }
+        },
+        "Sub": {
+          "runAfter": {
+            "Mail": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d07aef9a-1596-4bb9-8ef7-6f660edc9dc0"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Sub",
+                "type": "string",
+                "value": "@{triggerBody()['Sub_Value']}"
+              }
+            ]
+          }
+        },
+        "Body": {
+          "runAfter": {
+            "Sub": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "a9556dae-488a-47e8-8d23-a432a8d9c0e7"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Body",
+                "type": "string",
+                "value": "@{triggerBody()['Body_Value']}"
+              }
+            ]
+          }
+        },
+        "Cc": {
+          "runAfter": {
+            "Body": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5ada005a-04bf-4c26-aaea-287b36c449cc"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "BCC",
+                "type": "string",
+                "value": "@{triggerBody()['Cc_Value']}"
+              }
+            ]
+          }
+        },
+        "Try": {
+          "actions": {
+            "Send_email_(V4)": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "fbe22f80-abf4-40c5-b164-f8773557404c"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sendgrid",
+                  "operationId": "SendEmailV4",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sendgrid"
+                },
+                "parameters": {
+                  "request/from": "admin@gigmos.com",
+                  "request/to": "@variables('Mail')",
+                  "request/subject": "@variables('Sub')",
+                  "request/text": "<p>@{variables('Body')}</p>",
+                  "request/bcc": "@variables('BCC')"
+                },
+                "authentication": {
+                  "type": "Raw",
+                  "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Cc": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "90f89920-7b49-43d5-bd8a-bdc51e9d99e6"
+          },
+          "type": "Scope"
+        },
+        "Catch": {
+          "actions": {
+            "Compose": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "a85e3564-a516-4640-9220-5a58bcbeed35"
+              },
+              "type": "Compose",
+              "inputs": "@result('Try')"
+            },
+            "Compose_2": {
+              "runAfter": {
+                "Compose": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "7a4c02a1-a33a-4d02-b99b-e5fccee40e10"
+              },
+              "type": "Compose",
+              "inputs": "@coalesce(\r\n  result('Try')?[0]?['error']?['message'],\r\n  result('Try')?[1]?['error']?['message'],\r\n  result('Try')?[2]?['error']?['message'],\r\n  result('Try')?[3]?['error']?['message'],\r\n  'Unknown error'\r\n)\r\n"
+            },
+            "Add_a_new_row": {
+              "runAfter": {
+                "Compose_2": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "536f1ec9-a7d0-4b75-a386-471ef894c78c"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "CreateRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "crf46_log_historyflows",
+                  "item/crf46_newcolumn": "NotificationsWithBcc",
+                  "item/crf46_gw_date": "@convertTimeZone(utcNow(), 'UTC', 'India Standard Time')\r\n",
+                  "item/crf46_message": "@outputs('Compose_2')",
+                  "item/crf46_rundatetime": "@convertTimeZone(utcNow(), 'UTC', 'India Standard Time')\r\n"
+                },
+                "authentication": {
+                  "type": "Raw",
+                  "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                }
+              }
+            },
+            "Terminate": {
+              "runAfter": {
+                "Add_a_new_row": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "2a7f897d-8aaf-48ec-ac9d-e76564dd3341"
+              },
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Failed"
+              }
+            }
+          },
+          "runAfter": {
+            "Try": [
+              "Failed"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "027658e7-11d3-4800-9935-480dc4352dd4"
+          },
+          "type": "Scope"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

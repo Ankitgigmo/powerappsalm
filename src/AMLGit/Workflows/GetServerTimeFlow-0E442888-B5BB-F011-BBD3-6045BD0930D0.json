@@ -1,0 +1,172 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "gig_sharedcommondataserviceforapps_5eca0"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "e0941cbf-87f9-47a9-a742-8d2bc0ea3534"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            }
+          }
+        }
+      },
+      "actions": {
+        "Try": {
+          "actions": {
+            "Compose": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "cb79ee74-8ce0-4184-8b4e-87357b9c5fd0"
+              },
+              "type": "Compose",
+              "inputs": "@utcNow()"
+            },
+            "Respond_to_a_Power_App_or_flow": {
+              "runAfter": {
+                "Compose": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "d2cc3617-c227-446b-8d7c-fd2516471d58"
+              },
+              "type": "Response",
+              "kind": "PowerApp",
+              "inputs": {
+                "statusCode": 200,
+                "body": {
+                  "utcnow": "@{outputs('Compose')}"
+                },
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "utcnow": {
+                      "title": "utcnow",
+                      "x-ms-dynamically-added": true,
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "00ca6e98-c7df-4e39-aded-f32f0dd07feb"
+          },
+          "type": "Scope"
+        },
+        "Catch": {
+          "actions": {
+            "Filter_array": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "f5dbbf99-8de1-4d4b-a712-ad826094872b"
+              },
+              "type": "Query",
+              "inputs": {
+                "from": "@result('Try')",
+                "where": "@or(equals(item()?['Status'], 'Failed'),equals(item()?['Status'], 'TimedOut'))"
+              }
+            },
+            "Compose_2": {
+              "runAfter": {
+                "Filter_array": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "ae92cdf0-a8bf-4bf2-a4ce-c363c59df482"
+              },
+              "type": "Compose",
+              "inputs": "@coalesce(\r\n    first(body('Filter_array'))?['error']?['message'],\r\n    first(body('Filter_array'))?['message'],\r\n    first(body('Filter_array'))?['outputs']?['body']?['error']?['message'],\r\n    first(body('Filter_array'))?['outputs']?['body']?['error'],\r\n    first(body('Filter_array'))?['outputs']?['body']?['message'],\r\n    'No error/message found'\r\n)\r\n"
+            },
+            "Add_a_new_row": {
+              "runAfter": {
+                "Compose_2": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "1efac0c3-b0b9-496f-949a-d77d1e6cde8a"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "CreateRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "crf46_log_historyflows",
+                  "item/crf46_newcolumn": "Get Server Time Flow",
+                  "item/crf46_flowstatus": "Faill",
+                  "item/crf46_gw_date": "@convertTimeZone(utcNow(), 'UTC', 'India Standard Time')\r\n",
+                  "item/crf46_message": "@outputs('Compose_2')",
+                  "item/crf46_rundatetime": "@convertTimeZone(utcNow(), 'UTC', 'India Standard Time')\r\n"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Terminate": {
+              "runAfter": {
+                "Add_a_new_row": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "a4c689f7-72a4-4c7b-b475-2b7d92ddfd01"
+              },
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Failed"
+              }
+            }
+          },
+          "runAfter": {
+            "Try": [
+              "TimedOut",
+              "Failed"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "eb0c8248-0e61-4a96-a461-712e0be7c4e4"
+          },
+          "type": "Scope"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{75c2a688-aaf4-4494-ae9e-82d8448ad57d}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{1fcad2e5-843c-404a-8b35-1d18ebcc6d3b}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{26cd0482-8c7e-4916-ac33-dd649c93897b}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b2085666-587e-4c74-9fc4-7b8d98906329}">
+                        <labels>
+                          <label description="primary_id" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_primary_id" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="crf46_primary_id" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{68499643-a055-43c4-ad30-3422beba6d26}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{417698f5-f784-48af-9377-37b5eb834a81}">
+                        <labels>
+                          <label description="gw_person_name" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_person_name" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crf46_gw_person_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80bbeb77-e793-49c0-9ad1-802b221d0183}">
+                        <labels>
+                          <label description="gw_live_id_verification" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_live_id_verification" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crf46_gw_live_id_verification" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ad251128-1d80-467a-88be-5cb6df3c3311}">
+                        <labels>
+                          <label description="gw_live_id_verification_last_modified_date" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_live_id_verification_last_modified_date" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crf46_gw_live_id_verification_last_modified_date" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed1423a6-951c-4b93-91a3-2de8a65ba3c0}">
+                        <labels>
+                          <label description="gw_bgv_green_report_exist" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_bgv_green_report_exist" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crf46_gw_bgv_green_report_exist" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a5a18f7f-72df-443b-b42a-42a6820e5ce7}">
+                        <labels>
+                          <label description="gw_bgv_green_report_last_modified_date" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_bgv_green_report_last_modified_date" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crf46_gw_bgv_green_report_last_modified_date" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6e857c64-12b0-49c3-b413-628427960858}">
+                        <labels>
+                          <label description="gw_address_proof_exist" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_address_proof_exist" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crf46_gw_address_proof_exist" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4604b37-2d5d-40d9-9651-1c54a1dd147d}">
+                        <labels>
+                          <label description="gw_address_proof_last_modified_date" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_address_proof_last_modified_date" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crf46_gw_address_proof_last_modified_date" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c5866f98-063e-4f79-8118-830c158f9ac6}">
+                        <labels>
+                          <label description="gw_agreement_exist" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_agreement_exist" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crf46_gw_agreement_exist" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1ebbbba1-eae4-40ac-a0f0-5024a3915d24}">
+                        <labels>
+                          <label description="gw_agreement_last_modified_date" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_agreement_last_modified_date" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crf46_gw_agreement_last_modified_date" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5f3d15e-345b-4e74-b42c-d9ce2ba21c8e}">
+                        <labels>
+                          <label description="gw_id_proof_exist" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_id_proof_exist" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crf46_gw_id_proof_exist" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{16305cc8-40cd-43a1-b054-c42918082186}">
+                        <labels>
+                          <label description="gw_id_proof_last_modified_date" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_id_proof_last_modified_date" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crf46_gw_id_proof_last_modified_date" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3cb83d7c-20d5-4930-84ad-4a592525c63f}">
+                        <labels>
+                          <label description="gw_live_id_exist" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_live_id_exist" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crf46_gw_live_id_exist" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9dec4c11-9909-4f7e-8536-c2a1c50ed32a}">
+                        <labels>
+                          <label description="gw_live_id_last_modified_date" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_live_id_last_modified_date" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crf46_gw_live_id_last_modified_date" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6274145a-92b5-457b-97fa-0e9b0175bea2}">
+                        <labels>
+                          <label description="gw_trc_exist" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_trc_exist" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="crf46_gw_trc_exist" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{30fb2b7e-9344-41cd-bb6c-cb8a4b8ba867}">
+                        <labels>
+                          <label description="gw_trc_last_modified_date" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_trc_last_modified_date" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="crf46_gw_trc_last_modified_date" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{33492dee-a6e2-4c6a-8d4c-1f367140b8c6}">
+                        <labels>
+                          <label description="gw_last_modified_by" languagecode="1033" />
+                        </labels>
+                        <control id="crf46_gw_last_modified_by" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="crf46_gw_last_modified_by" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

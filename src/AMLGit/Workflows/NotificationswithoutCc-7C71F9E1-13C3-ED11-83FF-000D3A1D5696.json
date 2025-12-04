@@ -1,0 +1,261 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_sendgrid_1": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "gig_SendGrid7Nov2024"
+        },
+        "api": {
+          "name": "shared_sendgrid"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "gig_sharedcommondataserviceforapps_472ea"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "299af762-27fd-4d01-b0e2-568c87b0ca3c"
+          },
+          "type": "Request",
+          "kind": "PowerApp",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Mail_Value": {
+                  "type": "string",
+                  "description": "Enter initial value",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Sub_Value": {
+                  "type": "string",
+                  "description": "Enter initial value",
+                  "x-ms-powerflows-param-ispartial": false
+                },
+                "Initializevariable_Value": {
+                  "type": "any"
+                }
+              },
+              "required": [
+                "Mail_Value",
+                "Sub_Value",
+                "Initializevariable_Value"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Mail": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "49244096-8039-4bdb-a5bc-5d269d4d3222"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Mail",
+                "type": "string",
+                "value": "@{triggerBody()['Mail_Value']}"
+              }
+            ]
+          }
+        },
+        "Sub": {
+          "runAfter": {
+            "Mail": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f0c6a91d-bff2-4c03-aa57-65c3ab6833aa"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Sub",
+                "type": "string",
+                "value": "@{triggerBody()['Sub_Value']}"
+              }
+            ]
+          }
+        },
+        "Body": {
+          "runAfter": {
+            "Sub": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "1e909c89-5ef7-4500-a337-e380f5010a2e"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Body",
+                "type": "string",
+                "value": "@{triggerBody()['Initializevariable_Value']}"
+              }
+            ]
+          }
+        },
+        "Try": {
+          "actions": {
+            "Send_email_(V4)": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "adbfe114-2c00-4519-ac64-00fbc39280df"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sendgrid_1",
+                  "operationId": "SendEmailV4",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sendgrid"
+                },
+                "parameters": {
+                  "request/from": "admin@gigmos.com",
+                  "request/to": "@variables('Mail')",
+                  "request/subject": "@variables('Sub')",
+                  "request/text": "<p>@{variables('Body')}</p>"
+                },
+                "authentication": {
+                  "type": "Raw",
+                  "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Body": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "44ca9a9f-7380-4ad6-a97f-82fa7baf4d20"
+          },
+          "type": "Scope"
+        },
+        "Catch": {
+          "actions": {
+            "Compose": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "b25de702-1790-4418-ae23-1412599f61b7"
+              },
+              "type": "Compose",
+              "inputs": "@result('Try')"
+            },
+            "Compose_2": {
+              "runAfter": {
+                "Filter_array": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "8602c11a-5b08-4250-a007-82368194fad8"
+              },
+              "type": "Compose",
+              "inputs": "@coalesce(\r\n    first(body('Filter_array'))?['error']?['message'],\r\n    first(body('Filter_array'))?['message'],\r\n    first(body('Filter_array'))?['outputs']?['body']?['error']?['message'],\r\n    first(body('Filter_array'))?['outputs']?['body']?['error'],\r\n    first(body('Filter_array'))?['outputs']?['body']?['message'],\r\n    'No error/message found'\r\n)\r\n"
+            },
+            "Add_a_new_row": {
+              "runAfter": {
+                "Compose_2": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "f8397fcf-00bc-41f1-b298-0f5d5772d6c0"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "CreateRecord",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "crf46_log_historyflows",
+                  "item/crf46_newcolumn": "Notifications without Cc",
+                  "item/crf46_flowstatus": "Fail",
+                  "item/crf46_gw_date": "@convertTimeZone(utcNow(), 'UTC', 'India Standard Time')\r\n",
+                  "item/crf46_message": "@outputs('Compose_2')",
+                  "item/crf46_rundatetime": "@convertTimeZone(utcNow(), 'UTC', 'India Standard Time')\r\n"
+                },
+                "authentication": {
+                  "type": "Raw",
+                  "value": "@json(decodeBase64(triggerOutputs().headers['X-MS-APIM-Tokens']))['$ConnectionKey']"
+                }
+              }
+            },
+            "Terminate_2": {
+              "runAfter": {
+                "Add_a_new_row": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "ebf6c059-4650-4a6a-a21d-80e34842bf04"
+              },
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Failed"
+              }
+            },
+            "Filter_array": {
+              "runAfter": {
+                "Compose": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "490b17e5-6465-4802-a589-1c86a72f4027"
+              },
+              "type": "Query",
+              "inputs": {
+                "from": "@result('Try')",
+                "where": "@or(equals(item()?['Status'], 'Failed'),equals(item()?['Status'], 'TimedOut'))"
+              }
+            }
+          },
+          "runAfter": {
+            "Try": [
+              "Failed"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "c7b760d0-a3b5-4d81-92fe-6af4d0824e48"
+          },
+          "type": "Scope"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

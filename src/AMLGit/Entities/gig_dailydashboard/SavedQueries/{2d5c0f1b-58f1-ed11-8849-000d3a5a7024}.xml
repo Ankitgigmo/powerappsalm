@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2d5c0f1b-58f1-ed11-8849-000d3a5a7024}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="gig_name" select="1" icon="1" preview="1">
+        <row name="result" id="gig_dailydashboardid">
+          <cell name="gig_name" width="200" />
+          <cell name="createdby" width="104" />
+          <cell name="gig_datemonthyear" width="100" />
+          <cell name="createdon" width="105" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="gig_dailydashboard">
+          <attribute name="gig_name" />
+          <attribute name="gig_dailydashboardid" />
+          <attribute name="createdby" />
+          <attribute name="gig_datemonthyear" />
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="true" />
+          <filter type="and">
+            <condition attribute="createdon" operator="on-or-before" value="2023-02-28" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Records before 2023" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

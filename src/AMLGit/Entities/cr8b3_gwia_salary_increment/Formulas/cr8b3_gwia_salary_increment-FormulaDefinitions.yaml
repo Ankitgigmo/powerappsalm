@@ -1,0 +1,3 @@
+cr8b3_gw_month: =Month(cr8b3_gw_date)
+cr8b3_gw_revised_ctc: =cr8b3_gw_increment_fixed_ctc+cr8b3_gw_increment_variable_ctc
+cr8b3_gw_year: =Year(cr8b3_gw_date)

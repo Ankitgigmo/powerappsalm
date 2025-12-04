@@ -1,0 +1,2 @@
+crf46_auto_month: =Month(crf46_auto_date)
+crf46_auto_year: =Year(crf46_auto_date)

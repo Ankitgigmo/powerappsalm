@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{dd2ed17c-be53-4d7e-823b-1602a0f9473c}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="gig_name" select="1" icon="1" preview="1">
+        <row name="result" id="gig_dailydashboardid">
+          <cell name="gig_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="gig_dailydashboard">
+          <attribute name="gig_dailydashboardid" />
+          <attribute name="gig_name" />
+          <attribute name="createdon" />
+          <order attribute="gig_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Daily Dashboard Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

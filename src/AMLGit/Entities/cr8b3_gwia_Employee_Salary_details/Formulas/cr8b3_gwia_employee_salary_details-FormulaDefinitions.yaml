@@ -1,0 +1,5 @@
+cr8b3_gw_cal_current_ctc: =(cr8b3_gw_fixed_ctc+cr8b3_gw_variable)
+cr8b3_gw_month: =Month(cr8b3_gw_date)
+cr8b3_gw_year: =Year(cr8b3_gw_date)
+crf46_gig_variable_pay_due_month: =Month(crf46_gig_variable_pay_due_date)
+crf46_gig_variable_pay_due_year: =Year(crf46_gig_variable_pay_due_date)

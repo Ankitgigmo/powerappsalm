@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{a78f1f9a-cfb1-ed11-9885-000d3a1ec6a6}</savedqueryid>
+    <querytype>8192</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" output-format="xml-platform">
+        <entity name="cr8b3_gwia_ad_mapping_group">
+          <attribute name="cr8b3_gwia_ad_mapping_groupid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="ownerid" operator="eq-userid" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="My gwia_AD_Mapping_Group" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Active gwia_AD_Mapping_Group owned by me" languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

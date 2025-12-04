@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.25103.175" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25103.175" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25103.00175">
+  <SolutionManifest>
+    <UniqueName>AMLGit</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="AMLGit" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>Power_app_CLI</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Power app CLI" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>gitaml</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>84126</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="cr8b3_auto_daily_huddle" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_auto_daily_huddle_attendance" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_auto_employee_details" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gw_employee_details" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_account_type_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_ad_mapping_group" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_address_type" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_addresses" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_app_visit" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_approval_status" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_bank_details" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_bank_reference" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_bank_type_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_bgv" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_bgv_status_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_calculation_configurations_modifications" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_calculation_configurationses_test" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_case_detail" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_case_pickup" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_case_rating_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_client_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_country_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_cvr_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_cx_recoveries" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_daily_closures" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_daily_dashboards" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_daily_huddle" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_daily_huddle_action_item" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_daily_huddle_attendence" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_department_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_department_type_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_designation_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_emp_bank_details" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_emp_country_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_emp_exception_parameter_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_address_details" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_exception_parameter" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_exceptions" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_holiday_calendar" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_holiday_type" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_interaction" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_log_management" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_salary_details" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_status_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_employee_teramind_report" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_error_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_exception_apply" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_exception_parameter_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_exception_status_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_gigworker_details" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_gigworker_leaves" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_holiday_calendar" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_it_audit" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_kpi_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_kpi_rating" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_leave_status_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_leave_type_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_location_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_missed_cases" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_missed_cases_status_masters" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_ntb" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_payment_plan" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_payment_plan_modification_requests" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_payment_plusminus" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_payment_type_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_payments" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_penalty_rate_masters" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_recovery_modality_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_recovery_status_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_recovery_type_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_salary_increment" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_shift_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_shift_type_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_status_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_status_type_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_team_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_teramind_report" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_tm_interaction" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_variable_pay" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_work_action_description" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_work_action_status" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_work_actions" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwia_worklocation_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_gwie_language_master" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_newtable" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_newtable1" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_newtable3" behavior="0" />
+      <RootComponent type="1" schemaName="cr8b3_newtable4" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_auto_business_unit1" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_auto_daily_dashboard" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_auto_incentive_details" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_auto_kpi_master" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_appraisal_forms" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_biometric_attendance" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_biometric_exceptions" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_data_update_requests" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_emp_plus_minus_master" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_emp_plusminus" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_employee_address_details" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_employee_bank_details" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_employee_bgv" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_employee_onboarding" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_employee_status_master" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_greythr_lov" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gig_salary_statement" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gwia_gigworker_document_management" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_gwia_trc_details" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_log_historyflow" behavior="0" />
+      <RootComponent type="1" schemaName="crf46_realignment_logs" behavior="0" />
+      <RootComponent type="1" schemaName="gig_dailydashboard" behavior="0" />
+      <RootComponent type="1" schemaName="gig_gwia_backlogs" behavior="0" />
+      <RootComponent type="1" schemaName="gig_gwia_case_audit" behavior="0" />
+      <RootComponent type="29" id="{0e442888-b5bb-f011-bbd3-6045bd0930d0}" behavior="0" />
+      <RootComponent type="29" id="{430582eb-ffc2-ed11-83ff-000d3a1d5696}" behavior="0" />
+      <RootComponent type="29" id="{7c71f9e1-13c3-ed11-83ff-000d3a1d5696}" behavior="0" />
+      <RootComponent type="29" id="{c73c4834-c269-ee11-9ae7-000d3a1d5fa0}" behavior="0" />
+      <RootComponent type="300" schemaName="cr8b3_internalautomationappdevgwfacing_b4e16" behavior="0" />
+      <RootComponent type="300" schemaName="gig_employeeapp_d34a3" behavior="0" />
+      <RootComponent type="372" id="{88591fa6-fe93-417e-84c4-52ff2b91d53a}" schemaName="gig_sal-5ftest" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="gig_dailydashboard" displayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="1" schemaName="gig_dailydashboard" displayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="gig_payment" displayName="Payment" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="1" schemaName="gig_dailydashboard" displayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="gig_payment" displayName="Payment" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="60" displayName="Daily Dashboard" parentDisplayName="Daily Dashboard" id="{4a61dba3-31f6-40bc-9864-c645ffb3a650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="gig_payment" displayName="Payment" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Daily Dashboard" id="{636e53ff-b331-487e-a8ae-6fc82703ab69}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="gig_gig_dailydashboard_gig_payment_DailyDashboard" displayName="gig_gig_dailydashboard_gig_payment_DailyDashboard" parentSchemaName="gig_payment" parentDisplayName="Payment" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="60" displayName="Daily Dashboard" parentDisplayName="Daily Dashboard" id="{4a61dba3-31f6-40bc-9864-c645ffb3a650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="gig_gig_dailydashboard_gig_payment_DailyDashboard" displayName="gig_gig_dailydashboard_gig_payment_DailyDashboard" parentSchemaName="gig_payment" parentDisplayName="Payment" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Daily Dashboard" id="{636e53ff-b331-487e-a8ae-6fc82703ab69}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="createdon" displayName="Created On" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_attendance" displayName="Attendance %" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_attendance" displayName="Attendance %" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_avgcwta" displayName="Avg. CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_avgcwta" displayName="Avg. CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_avgcwtbeforeexc" displayName="Avg CWT Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_avgcwtbeforeexc" displayName="Avg CWT Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_avgcwtexclusionid" displayName="Avg CWT Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_avgcwtexclusionid" displayName="Avg CWT Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_closurecount" displayName="Closure Count" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_closurecount" displayName="Closure Count" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_countofmissedfollowups" displayName="Count of Missed Followups" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Patch1 (1.0.0.0)" />
+        <Dependent type="2" schemaName="gig_countofmissedfollowups" displayName="Count of Missed Followups" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_cvrafterexc" displayName="CVR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_cvrafterexc" displayName="CVR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_cvrbeforeexc" displayName="CVR Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_cvrbeforeexc" displayName="CVR Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_cvrexclusionid" displayName="CVR Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_cvrexclusionid" displayName="CVR Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_dailydashboardid" displayName="Daily Dashboard" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_dailydashboardid" displayName="Daily Dashboard" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_datemonthyear" displayName="Date" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_datemonthyear" displayName="Date" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_email" displayName="Email" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_email" displayName="Email" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_globalavgcwt" displayName="Global Avg CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_globalavgcwt" displayName="Global Avg CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_globalcvr" displayName="Global %CVR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_globalcvr" displayName="Global %CVR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_globalp90ctc" displayName="Global %P90 CTC" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_globalp90ctc" displayName="Global %P90 CTC" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_globalp90cwt" displayName="Global %P90 CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_globalp90cwt" displayName="Global %P90 CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_globalverbatim" displayName="Global Verbatim%" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_globalverbatim" displayName="Global Verbatim%" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_lob" displayName="LOB" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_lob" displayName="LOB" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_mid" displayName="MID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_mid" displayName="MID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_name" displayName="Name" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_name" displayName="Name" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_productivityafterexc" displayName="Productivity After Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_productivityafterexc" displayName="Productivity After Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_productivitybeforeexc" displayName="Productivity" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_productivitybeforeexc" displayName="Productivity" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_productivityexclusionid" displayName="Productivity Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_productivityexclusionid" displayName="Productivity Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_ssatafterexc" displayName="SSAT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_ssatafterexc" displayName="SSAT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_ssatbeforeexc" displayName="SSAT Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_ssatbeforeexc" displayName="SSAT Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_ssatexclusionid" displayName="SSAT Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_ssatexclusionid" displayName="SSAT Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_ssrafterexc" displayName="%SRR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_ssrafterexc" displayName="%SRR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_ssrbeforeexc" displayName="%SRR Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_ssrbeforeexc" displayName="%SRR Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_ssrexclusionid" displayName="%SRR Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_ssrexclusionid" displayName="%SRR Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_surveyafterexc" displayName="Survey Count" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_surveyafterexc" displayName="Survey Count" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_surveybeforeexc" displayName="Survey Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_surveybeforeexc" displayName="Survey Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_surveyexclusionid" displayName="Survey Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_surveyexclusionid" displayName="Survey Exclusion ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_team" displayName="Team" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_team" displayName="Team" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_teamleader" displayName="Team Leader" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_teamleader" displayName="Team Leader" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_teammanager" displayName="Team Manager" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_teammanager" displayName="Team Manager" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tlavgcwt" displayName="TL Avg CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tlavgcwt" displayName="TL Avg CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tlcvr" displayName="TL %CVR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tlcvr" displayName="TL %CVR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tlp90ctc" displayName="TL %P90 CTC" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tlp90ctc" displayName="TL %P90 CTC" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tlp90cwt" displayName="TL %P90 CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tlp90cwt" displayName="TL %P90 CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tlverbatim" displayName="TL Verbatim%" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tlverbatim" displayName="TL Verbatim%" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tmavgcwt" displayName="TM Avg CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tmavgcwt" displayName="TM Avg CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tmcvr" displayName="TM %CVR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tmcvr" displayName="TM %CVR" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tmp90ctc" displayName="TM %P90 CTC" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tmp90ctc" displayName="TM %P90 CTC" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tmp90cwt" displayName="TM %P90 CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tmp90cwt" displayName="TM %P90 CWT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_tmverbatim" displayName="TM Verbatim%" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_tmverbatim" displayName="TM Verbatim%" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_type" displayName="Type" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_type" displayName="Type" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_verbatim" displayName="Verbatim" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_verbatim" displayName="Verbatim" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_weightedssat" displayName="Weighted SSAT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_weightedssat" displayName="Weighted SSAT" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_workingdaysafterexc" displayName="Working Days" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_workingdaysafterexc" displayName="Working Days" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_workingdaysbeforeexc" displayName="Working Days Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_workingdaysbeforeexc" displayName="Working Days Before Exc" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="gig_workingdaysexclusionid" displayName="Working Days Exclusion  ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_workingdaysexclusionid" displayName="Working Days Exclusion  ID" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="importsequencenumber" displayName="Import Sequence Number" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="importsequencenumber" displayName="Import Sequence Number" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="overriddencreatedon" displayName="Record Created On" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="overriddencreatedon" displayName="Record Created On" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="statecode" displayName="Status" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Daily Dashboards" displayName="Active Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{d786837a-5822-4edc-a892-5e2e57eecece}" />
+        <Dependent type="26" schemaName="Active Daily Dashboards" displayName="Active Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{d786837a-5822-4edc-a892-5e2e57eecece}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Payments" displayName="Active Payments" parentSchemaName="gig_payment" parentDisplayName="Payment" solution="Gigmos (1.0.0.1)" id="{ce2a284a-29fa-4a55-be48-93245f31899c}" />
+        <Dependent type="60" displayName="Daily Dashboard" parentDisplayName="Daily Dashboard" id="{4a61dba3-31f6-40bc-9864-c645ffb3a650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Payments" displayName="Active Payments" parentSchemaName="gig_payment" parentDisplayName="Payment" solution="Gigmos (1.0.0.1)" id="{ce2a284a-29fa-4a55-be48-93245f31899c}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Daily Dashboard" id="{636e53ff-b331-487e-a8ae-6fc82703ab69}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Daily Dashboards" displayName="All Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{dc26c6c4-2f99-ec11-b400-00224830463e}" />
+        <Dependent type="26" schemaName="All Daily Dashboards" displayName="All Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{dc26c6c4-2f99-ec11-b400-00224830463e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Daily Dashboard Advanced Find View" displayName="Daily Dashboard Advanced Find View" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{dd2ed17c-be53-4d7e-823b-1602a0f9473c}" />
+        <Dependent type="26" schemaName="Daily Dashboard Advanced Find View" displayName="Daily Dashboard Advanced Find View" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{dd2ed17c-be53-4d7e-823b-1602a0f9473c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Daily Dashboard Associated View" displayName="Daily Dashboard Associated View" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{c3190bc4-0c35-4a5d-9e4a-cc6066924d94}" />
+        <Dependent type="26" schemaName="Daily Dashboard Associated View" displayName="Daily Dashboard Associated View" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{c3190bc4-0c35-4a5d-9e4a-cc6066924d94}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Daily Dashboard Lookup View" displayName="Daily Dashboard Lookup View" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{45966c45-5420-4cb2-be75-af36652a7d9d}" />
+        <Dependent type="26" schemaName="Daily Dashboard Lookup View" displayName="Daily Dashboard Lookup View" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{45966c45-5420-4cb2-be75-af36652a7d9d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Daily Dashboards Current Month" displayName="Daily Dashboards Current Month" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{1ef210e5-d49d-ec11-b400-000d3a1fd1db}" />
+        <Dependent type="26" schemaName="Daily Dashboards Current Month" displayName="Daily Dashboards Current Month" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{1ef210e5-d49d-ec11-b400-000d3a1fd1db}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Daily Dashboards Last Month" displayName="Daily Dashboards Last Month" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{69d138cf-d49d-ec11-b400-000d3a1fd1db}" />
+        <Dependent type="26" schemaName="Daily Dashboards Last Month" displayName="Daily Dashboards Last Month" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{69d138cf-d49d-ec11-b400-000d3a1fd1db}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Inactive Daily Dashboards" displayName="Inactive Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{8b65ef21-c99b-452e-8da5-2fe330d1bff7}" />
+        <Dependent type="26" schemaName="Inactive Daily Dashboards" displayName="Inactive Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{8b65ef21-c99b-452e-8da5-2fe330d1bff7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Daily Dashboards" displayName="My Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{8c6318b2-3496-ec11-b400-0022482c34b5}" />
+        <Dependent type="26" schemaName="My Daily Dashboards" displayName="My Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{8c6318b2-3496-ec11-b400-0022482c34b5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Daily Dashboards Current Month" displayName="My Daily Dashboards Current Month" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{08a6398a-d59d-ec11-b400-000d3a1fd1db}" />
+        <Dependent type="26" schemaName="My Daily Dashboards Current Month" displayName="My Daily Dashboards Current Month" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{08a6398a-d59d-ec11-b400-000d3a1fd1db}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Historical Dashboards" displayName="My Historical Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{84dcb225-7f9f-ec11-b400-000d3a1fd56b}" />
+        <Dependent type="26" schemaName="My Historical Dashboards" displayName="My Historical Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{84dcb225-7f9f-ec11-b400-000d3a1fd56b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quick Find Active Daily Dashboards" displayName="Quick Find Active Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{947e21d0-eaaa-45f3-bec6-474fd5e7fd71}" />
+        <Dependent type="26" schemaName="Quick Find Active Daily Dashboards" displayName="Quick Find Active Daily Dashboards" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{947e21d0-eaaa-45f3-bec6-474fd5e7fd71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Closure Count by Date/Month/Year" displayName="Closure Count by Date/Month/Year" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{a711d8ef-a59e-ec11-b400-000d3a1fd56b}" />
+        <Dependent type="59" schemaName="Closure Count by Date/Month/Year" displayName="Closure Count by Date/Month/Year" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{a711d8ef-a59e-ec11-b400-000d3a1fd56b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="CVR Before Exc, CVR After Exc by Date/Month/Year" displayName="CVR Before Exc, CVR After Exc by Date/Month/Year" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{a808bd98-af9e-ec11-b400-000d3a1fd56b}" />
+        <Dependent type="59" schemaName="CVR Before Exc, CVR After Exc by Date/Month/Year" displayName="CVR Before Exc, CVR After Exc by Date/Month/Year" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{a808bd98-af9e-ec11-b400-000d3a1fd56b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Productivity Before Exc, Productivity After Exc by Date/Month/Year" displayName="Productivity Before Exc, Productivity After Exc by Date/Month/Year" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{bdf34082-af9e-ec11-b400-000d3a1fd56b}" />
+        <Dependent type="59" schemaName="Productivity Before Exc, Productivity After Exc by Date/Month/Year" displayName="Productivity Before Exc, Productivity After Exc by Date/Month/Year" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{bdf34082-af9e-ec11-b400-000d3a1fd56b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Survey Before Exc, Survey After Exc by Date/Month/Year" displayName="Survey Before Exc, Survey After Exc by Date/Month/Year" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{1f0660fa-aa9e-ec11-b400-000d3a1fd56b}" />
+        <Dependent type="59" schemaName="Survey Before Exc, Survey After Exc by Date/Month/Year" displayName="Survey Before Exc, Survey After Exc by Date/Month/Year" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{1f0660fa-aa9e-ec11-b400-000d3a1fd56b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Survey Before Exc, Survey After Exc by Date/Month/Year - Day" displayName="Survey Before Exc, Survey After Exc by Date/Month/Year - Day" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{23094ead-b99e-ec11-b400-000d3a1fd56b}" />
+        <Dependent type="59" schemaName="Survey Before Exc, Survey After Exc by Date/Month/Year - Day" displayName="Survey Before Exc, Survey After Exc by Date/Month/Year - Day" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" id="{23094ead-b99e-ec11-b400-000d3a1fd56b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{06f6aabd-31af-47b6-9652-895de798e542}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Daily Dashboard" id="{06f6aabd-31af-47b6-9652-895de798e542}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Daily Dashboard" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{4a61dba3-31f6-40bc-9864-c645ffb3a650}" />
+        <Dependent type="60" displayName="Daily Dashboard" parentDisplayName="Daily Dashboard" id="{4a61dba3-31f6-40bc-9864-c645ffb3a650}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{636e53ff-b331-487e-a8ae-6fc82703ab69}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Daily Dashboard" id="{636e53ff-b331-487e-a8ae-6fc82703ab69}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Daily Dashboard" solution="Gigmos (1.0.0.1)" id="{a25b0d08-b545-4296-a8b3-02419d608478}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Daily Dashboard" id="{a25b0d08-b545-4296-a8b3-02419d608478}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="gig_dailydashboard_statecode" displayName="Status" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="9" schemaName="gig_dailydashboard_statecode" displayName="Status" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="gig_dailydashboard_statuscode" displayName="Status Reason" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="9" schemaName="gig_dailydashboard_statuscode" displayName="Status Reason" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="gig_type" displayName="Type" solution="Gigmos (1.0.0.1)" />
+        <Dependent type="2" schemaName="gig_type" displayName="Type" parentSchemaName="gig_dailydashboard" parentDisplayName="Daily Dashboard" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

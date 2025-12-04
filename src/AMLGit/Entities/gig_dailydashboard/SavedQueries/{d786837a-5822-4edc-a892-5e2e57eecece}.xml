@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{d786837a-5822-4edc-a892-5e2e57eecece}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="gig_name" select="1" icon="1" preview="1">
+        <row name="result" id="gig_dailydashboardid">
+          <cell name="gig_lob" width="100" />
+          <cell name="gig_teammanager" width="100" />
+          <cell name="gig_teamleader" width="100" />
+          <cell name="gig_team" width="100" />
+          <cell name="gig_name" width="300" />
+          <cell name="gig_email" width="100" />
+          <cell name="gig_mid" width="100" />
+          <cell name="gig_workingdaysbeforeexc" width="100" />
+          <cell name="gig_workingdaysafterexc" width="100" />
+          <cell name="gig_workingdaysexclusionid" width="100" />
+          <cell name="gig_attendance" width="100" />
+          <cell name="gig_closurecount" width="100" />
+          <cell name="gig_surveybeforeexc" width="100" />
+          <cell name="gig_surveyafterexc" width="100" />
+          <cell name="gig_surveyexclusionid" width="100" />
+          <cell name="gig_ssrbeforeexc" width="100" />
+          <cell name="gig_ssrafterexc" width="100" />
+          <cell name="gig_ssrexclusionid" width="100" />
+          <cell name="gig_verbatim" width="100" />
+          <cell name="gig_ssatbeforeexc" width="100" />
+          <cell name="gig_ssatafterexc" width="100" />
+          <cell name="gig_ssatexclusionid" width="100" />
+          <cell name="gig_productivitybeforeexc" width="100" />
+          <cell name="gig_productivityafterexc" width="100" />
+          <cell name="gig_productivityexclusionid" width="100" />
+          <cell name="gig_avgcwtbeforeexc" width="100" />
+          <cell name="gig_avgcwta" width="100" />
+          <cell name="gig_avgcwtexclusionid" width="100" />
+          <cell name="gig_cvrbeforeexc" width="100" />
+          <cell name="gig_cvrafterexc" width="100" />
+          <cell name="gig_cvrexclusionid" width="100" />
+          <cell name="gig_datemonthyear" width="100" />
+          <cell name="gig_type" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="gig_dailydashboard">
+          <attribute name="gig_dailydashboardid" />
+          <attribute name="gig_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="gig_lob" />
+          <attribute name="gig_teammanager" />
+          <attribute name="gig_teamleader" />
+          <attribute name="gig_team" />
+          <attribute name="gig_email" />
+          <attribute name="gig_workingdaysbeforeexc" />
+          <attribute name="gig_workingdaysafterexc" />
+          <attribute name="gig_mid" />
+          <attribute name="gig_workingdaysexclusionid" />
+          <attribute name="gig_attendance" />
+          <attribute name="gig_closurecount" />
+          <attribute name="gig_surveybeforeexc" />
+          <attribute name="gig_surveyafterexc" />
+          <attribute name="gig_surveyexclusionid" />
+          <attribute name="gig_ssrbeforeexc" />
+          <attribute name="gig_ssrafterexc" />
+          <attribute name="gig_ssrexclusionid" />
+          <attribute name="gig_verbatim" />
+          <attribute name="gig_ssatbeforeexc" />
+          <attribute name="gig_ssatafterexc" />
+          <attribute name="gig_ssatexclusionid" />
+          <attribute name="gig_productivitybeforeexc" />
+          <attribute name="gig_productivityafterexc" />
+          <attribute name="gig_productivityexclusionid" />
+          <attribute name="gig_cvrbeforeexc" />
+          <attribute name="gig_cvrafterexc" />
+          <attribute name="gig_cvrexclusionid" />
+          <attribute name="gig_datemonthyear" />
+          <attribute name="gig_type" />
+          <attribute name="gig_avgcwtexclusionid" />
+          <attribute name="gig_avgcwtbeforeexc" />
+          <attribute name="gig_avgcwta" />
+          <order attribute="gig_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Daily Dashboards" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

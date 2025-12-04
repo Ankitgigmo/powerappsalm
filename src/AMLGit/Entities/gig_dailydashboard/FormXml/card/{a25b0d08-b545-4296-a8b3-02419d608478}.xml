@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a25b0d08-b545-4296-a8b3-02419d608478}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{87cbe26c-bfc8-404d-a648-3eb04604f7d6}" IsUserDefined="0" ordinalvalue="0">
+          <columns>
+            <column width="75%" id="1">
+              <sections>
+                <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{aee2f0b1-cddc-426a-8e7e-05c9823d8233}" IsUserDefined="0" ordinalvalue="0">
+                  <rows>
+                    <row>
+                      <cell id="{65eae966-af2e-414d-b49e-24690e09d408}" showlabel="true" locklevel="0" ordinalvalue="10000">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{bece1c40-6e69-467d-b9ed-615c4c21d1b6}" IsUserDefined="0" ordinalvalue="1">
+                  <rows>
+                    <row>
+                      <cell id="{736c5ea2-2b6f-4325-a75a-7389a6e8c372}" showlabel="true" locklevel="0" ordinalvalue="10000">
+                        <labels>
+                          <label description="Name" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{13444878-69e9-4270-9134-01025b47d973}" IsUserDefined="0" ordinalvalue="2">
+                  <rows>
+                    <row>
+                      <cell id="{65df4c73-7b2a-475d-86c3-8cd5b276f4fe}" showlabel="true" locklevel="0" ordinalvalue="10000">
+                        <labels>
+                          <label description="Owner" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                      <cell id="{f9df7ede-c8c0-4a3f-98f8-77dddcae964e}" showlabel="true" locklevel="0" ordinalvalue="20001">
+                        <labels>
+                          <label description="Created On" languagecode="1033" solutionaction="Added" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A card form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
